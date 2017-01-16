@@ -199,7 +199,7 @@ resource "aws_db_instance" "web-rds-01" {
     instance_class = "db.t1.micro"
     name = "myappdb"
     username = "kuldeep"
-    password = "kuldeep123"
+    password = "kuldeep"
     vpc_security_group_ids = ["${aws_security_group.myapp_mysql_rds.id}"]
     db_subnet_group_name = "${aws_db_subnet_group.myapp-db.id}"
     parameter_group_name = "default.mysql5.6"
